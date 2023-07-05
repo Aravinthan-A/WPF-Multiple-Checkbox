@@ -1,0 +1,35 @@
+﻿<Window x:Class="virat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:virat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Width="300" Margin="0,30,0,0" Content="          APPLICATION"  FontSize="24"></Label>
+        <StackPanel Background="WhiteSmoke" Orientation="Horizontal" Height="98">
+            <Label Width="100" Margin="50,30,0,20" x:Name="lblresult" FontWeight="Bold" Foreground="DarkBlue" Content="    SKILL" Background="White" Height="35" FontSize="20"></Label>
+            <CheckBox Margin="70,30,0,10" Content="java" Width="70" x:Name="Chkjava" Click="CheckBox_checked" Height="30" FontSize="20"></CheckBox>
+            <CheckBox Margin="40,40,0,20" Content="Csharp"  x:Name="Chkcsharp"  Click="CheckBox_checked" Height="30" FontSize="20" Width="87"></CheckBox>
+            <CheckBox Margin="60,45,0,20" Content="Esharp" x:Name="Chkesharp" Click="CheckBox_checked"   Width="91" FontSize="20"></CheckBox>
+            <Label Width="200" Margin="30,0,0,-10" x:Name="lblbest" Height="35" Foreground="Red" FontSize="20"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background="WhiteSmoke" Margin="0,20,0,0" Height="98">
+            <Label Width="104" Margin="50,30,0,20" FontWeight="Bold" Foreground="DarkBlue" Content="COUNTRY" Background="White" Height="36" FontSize="20"></Label>
+            <CheckBox Margin="100,30,0,10" x:Name="chkindia" Content="INDIA" Unchecked="CheckBox_Checked" Checked="CheckBox_Checked" Width="77" Height="30" FontSize="20"></CheckBox>
+            <CheckBox Margin="80,45,0,20" x:Name="Chkothers" Content="OTHERS" Unchecked="Chkothers_Checked" Checked="Chkothers_Checked" Width="99" FontSize="20"></CheckBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Background="WhiteSmoke" Margin="0,20,0,0" Height="98">
+            <Label Width="130" Margin="50,30,0,20" FontWeight="Bold" Foreground="DarkBlue" Content="EXPERIENCE" Background="White" Height="36" FontSize="20"></Label>
+            <CheckBox Margin="100,30,0,10" x:Name="Chkfive" Content="FRESHER" IsEnabled="False" Width="104"  Checked="Chkfive_Checked"  Height="30" FontSize="20"></CheckBox>
+            <CheckBox Margin="20,40,0,20" x:Name="Chkten" Content="EXPERIENCED" Height="30" Unchecked="Chkten_Checked" Checked="Chkten_Checked" FontSize="20" Width="151"></CheckBox>
+            <Label Width="250" x:Name="lblexp" Margin="40,0,0,-19" Height="41" Foreground="Red" FontSize="20"></Label>
+        </StackPanel>
+        <StackPanel>
+            <Label Width="100" Margin="550,-330,0,-10" x:Name="lblprint" Foreground="Red" Background="White" Height="35" FontSize="20"></Label>
+        </StackPanel>
+    </StackPanel>
+
+
+</Window>
